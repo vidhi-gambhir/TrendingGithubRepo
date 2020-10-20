@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageHolder"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_icon"
+        />
+    <View
+        android:id="@+id/nameHolder"
+        android:layout_width="100dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/view_shape"
+        android:layout_toRightOf="@id/imageHolder"/>
+
+    <View
+        android:id="@+id/authorHolder"
+        android:layout_width="260dp"
+        android:layout_height="12dp"
+        android:layout_toRightOf="@id/imageHolder"
+        android:layout_below="@id/nameHolder"
+        android:background="@drawable/view_shape"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="21dp"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/authorHolder"
+        />
+
+</RelativeLayout>

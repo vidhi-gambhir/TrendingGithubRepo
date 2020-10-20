@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.timer.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+            <include layout="@layout/shimmer_items"/>
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view"
+            android:scrollbars="none"
+            android:layout_below="@id/toolbar"
+            />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <include
+        android:id="@+id/error_page"
+        layout="@layout/error_page"
+        android:visibility="gone"/>
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="56dp">-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/menu_button"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:src="@drawable/ic_more_vert_black_24dp"-->
+    <!--            android:layout_marginEnd="16dp"-->
+    <!--            android:layout_marginTop="16dp"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:layout_marginRight="16dp" />-->
+    <!--    </RelativeLayout>-->
+
+
+
+
+<!--    <View-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:background="@android:color/darker_gray" />-->
+
+
+
+
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/errorPage"
+    android:background="#FFFFFF">
+
+    <include layout="@layout/toolbar"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/GifImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/image"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/gifImage"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:src="@mipmap/ic_pic_error"-->
+<!--        />-->
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GifImage"
+        android:text="Oops!"
+        android:textSize="28dp"
+        android:textColor="#4A4A4A"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="Roboto-Bold"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/alienText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/errorText"
+        android:layout_marginTop="8dp"
+        android:text="There is no internet connection"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="Roboto-Regular"
+        android:textColor="#929292"
+        android:textSize="16dp"/>
+    <TextView
+    android:id="@+id/alienText2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/alienText"
+    android:layout_marginTop="4dp"
+    android:text="Please check your internet connection"
+    android:layout_centerHorizontal="true"
+    android:fontFamily="Roboto-Regular"
+    android:textColor="#929292"
+    android:textSize="16dp"/>
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="RETRY"
+        android:background="@drawable/button_border"
+        android:textSize="15dp"
+        android:textColor="#31B057"
+        android:fontFamily="Roboto-Medium"
+        android:clickable="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
